@@ -1,14 +1,20 @@
-import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
-import About from './components/About'
+import React from 'react'
+import { SafeAreaView,View, Text } from 'react-native'
 import style from './GlobalStyle'
+import AppContainer  from './components/Navigation'
 
-export default class App extends React.Component {
-  render() {
-    return (
-        <SafeAreaView style={style.droidSafeArea}>
-            <About/>
-        </SafeAreaView>
-    );
-  }
+export default class About extends React.Component{
+
+    render(){
+        return(
+            <SafeAreaView style={style.droidSafeArea}>
+                <AppContainer/>
+            </SafeAreaView>
+        )
+    }
+
+
+
 }
+
+
